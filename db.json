@@ -1,0 +1,46 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Collection 8 Denim Jacket",
+      "color": "Light Indigo",
+      "image": "./P2 IMAGES/FOG1JACKETFRONT.png",
+      "price": 600
+    },
+    {
+      "id": 2,
+      "name": "Collection 8 Denim Jacket",
+      "color": "Beige",
+      "image": "./P2 IMAGES/FOG2JACKETFRONT.png",
+      "price": 600
+    },
+    {
+      "id": 3,
+      "name": "Milano Vee Neck",
+      "color": "Light Grey",
+      "image": "./P2 IMAGES/FOG3SHIRTFRONT.png",
+      "price": 450.00
+    },
+    {
+      "id": 4,
+      "name": "Milano Vee Neck",
+      "color": "Cream",
+      "image": "./P2 IMAGES/FOG4SHIRTFRONT.png",
+      "price": 450.00
+    },
+    {
+      "id": 5,
+      "name": "Embroidered 8 Milano Sweater",
+      "color": "Light Grey",
+      "image": "./P2 IMAGES/FOG5TEEFRONT",
+      "price": 315.00
+    },
+    {
+      "id": 6,
+      "name": "Embroidered 8 Milano Tee",
+      "color": "Washed Black",
+      "image": "./P2 IMAGES/FOG6TEEFRONT",
+      "price": 315.00
+    }
+  ]
+}
