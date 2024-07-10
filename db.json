@@ -5,48 +5,173 @@
       "name": "Collection 8 Denim Jacket",
       "color": "Light Indigo",
       "description": "The Denim Jacket is made in the USA from vintaged Japanese denim in a relaxed fit shaped by back pleats. The minimalist trucker style features a shirt collar, antique brass front zipper, side pockets, and antique brass buttons for adjustability. A leather Fear of God label is at the back collar.",
-      "image": "./P2 IMAGES/FOG1JACKETFRONT.png",
-      "price": 600
+      "image": "/P2IMAGES/FOG1JACKETFRONT.png",
+      "inventory": 5,
+      "price": 600,
+      "isInCart": false
     },
     {
       "id": 2,
       "name": "Collection 8 Denim Jacket",
       "color": "Beige",
       "description": "The Denim Jacket is made in the USA from vintaged Japanese denim in a relaxed fit shaped by back pleats. The minimalist trucker style features a shirt collar, antique brass front zipper, side pockets, and antique brass buttons for adjustability. A leather Fear of God label is at the back collar.",
-      "image": "./P2 IMAGES/FOG2JACKETFRONT.png",
-      "price": 600
+      "image": "/P2IMAGES/FOG2JACKETFRONT.png",
+      "inventory": 3,
+      "price": 600,
+      "isInCart": false
     },
     {
       "id": 3,
       "name": "Milano Vee Neck",
       "description": "The Milano V-Neck Tee is made in Italy from a stretch jersey that combines comfort with formal polish. The V-neck tee is visibly modern, with relaxed proportions and a stylish drape. A Fear of God leather label is stitched at the back collar.",
       "color": "Light Grey",
-      "image": "./P2 IMAGES/FOG3SHIRTFRONT.png",
-      "price": 450.00
+      "image": "/P2IMAGES/FOG3SHIRTFRONT.png",
+      "inventory": 0,
+      "price": 450.00,
+      "isInCart": false
     },
     {
       "id": 4,
       "name": "Milano Vee Neck",
       "description": "The Milano V-Neck Tee is made in Italy from a stretch jersey that combines comfort with formal polish. The V-neck tee is visibly modern, with relaxed proportions and a stylish drape. A Fear of God leather label is stitched at the back collar.",
       "color": "Cream",
-      "image": "./P2 IMAGES/FOG4SHIRTFRONT.png",
-      "price": 450.00
+      "image": "/P2IMAGES/FOG4SHIRTFRONT.png",
+      "inventory": 7,
+      "price": 450.00,
+      "isInCart": false
     },
     {
       "id": 5,
       "name": "Embroidered 8 Milano Sweater",
       "description": "The boucle straight neck sweater is knitted in Italy from a heavily textured virgin wool blend and detailed with a jacquard 8, symbolic of the collection number. The design features a straight neckline with volume in the body and sleeves to create a round silhouette. A Fear of God leather label is stitched at the back collar.",
       "color": "Light Grey",
-      "image": "./P2 IMAGES/FOG5TEEFRONT",
-      "price": 315.00
+      "image": "/P2IMAGES/FOG5TEEFRONT",
+      "inventory": 1,
+      "price": 315.00,
+      "isInCart": false
     },
     {
       "id": 6,
       "name": "Embroidered 8 Milano Tee",
-      "description": "The Embroidered 8 Milano Tee is made in Italy from a stretch jersey that combines comfort with formal polish. A heavily textured embroidered "8" on the front signifies Fear of God's collection number. The fit is relaxed with a stylish drape. A Fear of God leather label is stitched at the back collar.",
+      "description": "The Embroidered 8 Milano Tee is made in Italy from a stretch jersey that combines comfort with formal polish. A heavily textured embroidered  \"8\" on the front signifies Fear of God's collection number. The fit is relaxed with a stylish drape. A Fear of God leather label is stitched at the back collar.",
       "color": "Washed Black",
-      "image": "./P2 IMAGES/FOG6TEEFRONT",
-      "price": 315.00
+      "image": "/P2IMAGES/FOG6TEEFRONT",
+      "inventory": 2,
+      "price": 315.00,
+      "isInCart": false
+    }
+  ],
+
+  "reviews": [
+    {
+        "id": 4,
+        "title": "Awesome Tee",
+        "review": "great product, runs a bit on the larger side so if you like your products fitted, I suggest rounding down"
+    },
+    {
+        "id": 2,
+        "title": "Great Quality",
+        "review": "True to size, over the top quality! Would definitely recommend."
+    },
+    {
+        "id": 1,
+        "title": "Too Expensive",
+        "review": "Item was a bit on the pricier side, not worth it in my opinion."
+    },
+    {
+        "id": 4,
+        "title": "Cool!",
+        "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+    },
+    {
+      "id": 4,
+      "title": "Cool!",
+      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
     }
   ]
 }
