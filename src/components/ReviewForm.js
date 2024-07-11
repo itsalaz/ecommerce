@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function ReviewForm({ onAddReview, productId }) {
+export default function ReviewForm({ onAddReview, id }) {
   const [formData, setFormData] = useState({
     title: "",
     review: ""
@@ -17,8 +17,7 @@ export default function ReviewForm({ onAddReview, productId }) {
     event.preventDefault();
     const newReview = ({
       title: formData.title,
-      review: formData.review,
-      productId: productId
+      review: formData.review
     })
 
     fetch(`http://localhost:3000/reviews`, {
@@ -29,7 +28,7 @@ export default function ReviewForm({ onAddReview, productId }) {
       body: JSON.stringify(newReview),
     })
       .then((response) => {
-        response.json()
+        return response.json()
       })
       .then((addedReview) => {
         onAddReview(addedReview)

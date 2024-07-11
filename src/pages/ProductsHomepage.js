@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import ProductCard from "../components/ProductCard"
-import ProductList from "../components/ProductList"
 import Search from "../components/Search"
 import NavBar from "../components/NavBar"
 

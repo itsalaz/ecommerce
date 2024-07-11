@@ -8,26 +8,31 @@ export default function ReviewsList() {
   const [reviews, setReviews]= useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:3000/reviews?productId=${id}`)
+    fetch(`http://localhost:3000/reviews?id=${id}`)
     .then(response => response.json())
     .then(data => setReviews(data))
     .catch(error => console.error('Error fetching reviews:', error))
   }, [])
+
 
   function handleAddReview(newReview) {
     setReviews(reviews => ([...reviews, newReview]))
   }
 
     return (
-      <div>
+      <div className="reviews-container">
         <NavBar />
         <h1>Review</h1>
-        <ReviewForm onAddReview={handleAddReview} productId={id} />
+        <ReviewForm onAddReview={handleAddReview} id={id} />
         <ul>
           {reviews.map((review, index) => (
-            <li key={index}>
+            <li key={index} className="review">
+              <div className="review-title">
               <h2>{review.title}</h2>
+              <div className="review-info">
               <p>{review.review}</p>
+              </div>
+              </div>
             </li>
           ))}
         </ul>
