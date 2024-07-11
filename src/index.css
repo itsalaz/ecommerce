@@ -7,11 +7,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.app {
-  margin: 0 auto;
-  max-width: 1200px;
-}
 
+
+li {
+  list-style: none;
+}
 
 header h1 {
   font-size: 2.5em;
@@ -24,50 +24,6 @@ main {
   padding: 0 1rem;
 }
 
-.new-review-form {
-  padding: 2rem 1rem;
-  margin: 2rem 0;
-  background-color: rgba(181, 250, 181, 0.5);
-}
-
-.new-review-form form {
-  display: flex;
-  justify-content: center;
-}
-
-.new-review-form input {
-  margin-right: 2rem;
-  flex: 1;
-}
-
-.new-review-form button {
-  width: 150px;
-}
-
-label {
-  font-weight: bold;
-  display: block;
-}
-
-input {
-  padding: 0.25rem;
-  border: none;
-  font-family: inherit;
-  font-size: 1.2em;
-  border-bottom: 2px solid gray;
-  transition: all 0.2s;
-  width: 100%;
-}
-
-input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--green);
-}
-
-
-.card button {
-  margin-top: 0.5rem;
-}
 
 /* Products HomepagePage */
 
@@ -112,27 +68,53 @@ input:focus {
 }
 
 
-/* Product Details Page */
-
-.product-details-container {
-  display: flex;
-  text-decoration: none;
-  gap: 2rem;
-  margin: 20px;
-}
-
-.product-info {
-  margin-top: 100px;
-}
-
-
 /* Product Card */
 
 .product-card-details {
   list-style: none;
   padding-top: 20px;
   padding-bottom: 50px;
-  text-decoration: none;
-
 }
 
+.product-image {
+  width: 300px;
+  height: auto;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card-name {
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+.card {
+  margin: 1rem;
+}
+
+
+/* Product List */
+
+.product-list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px; /* Adjust the gap between cards as needed */
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+
+/* Product Details Page */
+
+product-details-container {
+  margin: 20px;
+  display: flex;
+}
+
+
+/* Reviews List */

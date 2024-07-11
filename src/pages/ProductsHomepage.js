@@ -31,17 +31,16 @@ function ProductsHomepage() {
     <>
       <NavBar />
       <main className="products-main">
-        <h1 className="home-header">Home Page</h1>
+        <h1 className="home-header">Products Page</h1>
         <form className="home-search" onSubmit={handleSubmit}>
           <Search search={search} onSearchChange ={handleSearchChange} />
           <button type="submit" className="search-button">Search</button>
         </form>
         <ul className="product-list">
-          {products.map(product => (
+          {filteredProducts.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
         </ul>
-        <ProductList products = {filteredProducts} />
       </main>
       
     </>

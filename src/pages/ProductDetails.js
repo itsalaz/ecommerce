@@ -26,19 +26,16 @@ import NavBar from "../components/NavBar"
         <>
         <NavBar />
         <div className="product-details-container">
-        <div className="product-image">
+        <div className="product-details-image">
           <img src={product.image} alt={product.name} />
         </div>
-        <div className="product-info">
+        <div className="product-details-info">
           <h1>{product.name}</h1>
           <p>{product.description}</p>
           <p>${product.price}</p>
-          <button>Add To Cart</button>
-          {``}
-          <Link to={`products/${id}/reviews}`}>Read Reviews</Link>
+          <Link to={`/products/${id}/reviews`}>Read Reviews</Link>
           </div>
           </div>
-          {``}
       </>
      )
   }

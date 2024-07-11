@@ -17,6 +17,7 @@ export default function ReviewsList() {
   function handleAddReview(newReview) {
     setReviews(reviews => ([...reviews, newReview]))
   }
+
     return (
       <div>
         <NavBar />
