@@ -8,10 +8,9 @@ export default function ProductCard({product}) {
     <div className="product-image">
       <img src={product.image} alt={product.name} className="product-image"/>
     </div>
-    <div className="product-details">
+    <div className="product-card-details">
       <h1>{product.name}</h1>
       <p>${product.price}</p>
-      {product.soldOut && <div className="sold-out">Sold Out</div>}
     </div>
     </Link>
   </>

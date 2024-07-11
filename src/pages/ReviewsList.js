@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react"
 import ReviewForm from "../components/ReviewForm"
+import { useParams } from "react-router-dom"
+import NavBar from "../components/NavBar"
 
 export default function ReviewsList() {
+  const { id } = useParams()
   const [reviews, setReviews]= useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/reviews')
+    fetch(`http://localhost:3000/reviews?productId=${id}`)
     .then(response => response.json())
     .then(data => setReviews(data))
-    .catch(error => console.error('Error fetching reivews:', error))
+    .catch(error => console.error('Error fetching reviews:', error))
   }, [])
 
   function handleAddReview(newReview) {
@@ -16,8 +19,9 @@ export default function ReviewsList() {
   }
     return (
       <div>
+        <NavBar />
         <h1>Review</h1>
-        <ReviewForm onAddReview={handleAddReview} />
+        <ReviewForm onAddReview={handleAddReview} productId={id} />
         <ul>
           {reviews.map((review, index) => (
             <li key={index}>

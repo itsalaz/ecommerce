@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 
-export default function ReviewForm({ onAddReview, onChangePage }) {
+export default function ReviewForm({ onAddReview, productId }) {
   const [formData, setFormData] = useState({
     title: "",
-    review: "",
-    correctIndex: 0
+    review: ""
   })
 
   function handleChange(event) {
@@ -19,10 +18,10 @@ export default function ReviewForm({ onAddReview, onChangePage }) {
     const newReview = ({
       title: formData.title,
       review: formData.review,
-      correctIndex: parseInt(formData.correctIndex)
+      productId: productId
     })
 
-    fetch('http://localhost:3000/reviews', {
+    fetch(`http://localhost:3000/reviews`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,10 +35,8 @@ export default function ReviewForm({ onAddReview, onChangePage }) {
         onAddReview(addedReview)
         setFormData ({
           title: "",
-          review: "",
-          correctIndex: 0,
+          review: ""
         })
-        onChangePage("List")
       })
       .catch((error) => {
         console.error('Error adding review', error)

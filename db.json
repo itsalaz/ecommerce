@@ -45,7 +45,7 @@
       "name": "Embroidered 8 Milano Sweater",
       "description": "The boucle straight neck sweater is knitted in Italy from a heavily textured virgin wool blend and detailed with a jacquard 8, symbolic of the collection number. The design features a straight neckline with volume in the body and sleeves to create a round silhouette. A Fear of God leather label is stitched at the back collar.",
       "color": "Light Grey",
-      "image": "/P2IMAGES/FOG5TEEFRONT",
+      "image": "/P2IMAGES/FOG5TEEFRONT.png",
       "inventory": 1,
       "price": 315.00,
       "isInCart": false
@@ -55,7 +55,7 @@
       "name": "Embroidered 8 Milano Tee",
       "description": "The Embroidered 8 Milano Tee is made in Italy from a stretch jersey that combines comfort with formal polish. A heavily textured embroidered  \"8\" on the front signifies Fear of God's collection number. The fit is relaxed with a stylish drape. A Fear of God leather label is stitched at the back collar.",
       "color": "Washed Black",
-      "image": "/P2IMAGES/FOG6TEEFRONT",
+      "image": "/P2IMAGES/FOG6TEEFRONT.png",
       "inventory": 2,
       "price": 315.00,
       "isInCart": false
@@ -84,94 +84,94 @@
         "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 6,
+      "title": "LOVE MY TEE",
+      "review": "It's nice to find a t-shirt that fits your shape and drapes nicely. This one does just that for me. Fits a bit oversized, quality is supreme."
+    },
+    {
+      "id": 1,
+      "title": "Great Quality",
+      "review": "I have to say the piece is a bit expensive, but overall the quality of the the jacket is very nice, and I plan on keep it in my closet forever. Great purchase if you're looking for longevity."
+    },
+    {
+      "id": 5,
+      "title": "Too Expensive",
+      "review": "For the quality, it was too expensive. I can't justify price for quality. Also runs oversized, size down."
+    },
+    {
+      "id": 3,
+      "title": "Fits Perfectly!",
+      "review": "I would recommend sizing down, I got an XS and it fits just right. Great purchase."
     },
     {
       "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "title": "Color not the same as photo!",
+      "review": "Not the same color as pictured. Had to return it."
+    },
+    {
+      "id": 6,
+      "title": "Love the Color!!",
+      "review": "I've been wearing this tee non-stop and I have to say it is so cozy, fits perfectly, and I get lots of compliments. So so happy with my purchase."
+    },
+    {
+      "id": 2,
+      "title": "Average quality, nice shape",
+      "review": "The quality is average. I will say the cut is pretty unique and fits my body quite nice. Overall not sure it's worth the price, but if you like a slimmer fit I would recommend sizing down."
+    },
+    {
+      "id": 3,
+      "title": "No Thanks!",
+      "review": "The V shape is too deep and fits awkwardly."
+    },
+    {
+      "id": 1,
+      "title": "Love love love!!",
+      "review": "I am so happy with my purchase. I have been shopping with this brand for quite some time and have to say this is one of my favorite pieces."
     },
     {
       "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "title": "Nice",
+      "review": "It's okay. Just a basic V neck. Nothing special, but gets the job done."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 6,
+      "title": "SIZE DOWN!!",
+      "review": "Product was huge on me. I usually wear a medium and it was like an XL."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 6,
+      "title": "Oversized, Great Quality",
+      "review": "I love the quality and the lettering detail. Makes the price justifiable and get tons of compliments."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 2,
+      "title": "DONT BUY",
+      "review": "Terrible shape, terrible color. Do not buy this product."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 1,
+      "title": "So Happy!!!",
+      "review": "I've been waiting to buy this jacket for some time, and I cant get enough of it. So happy with my purchase."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 1,
+      "title": "AWESOME!!! True to Size",
+      "review": "Usually the brand runs oversized but this item is very true to size. I would not recommend sizing down."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 3,
+      "title": "I Love my purchase",
+      "review": "So happy I went for it. It's a difficult brand because they don't have many stores and I like to try it on before I commit but they really nailed it on this shape and the quality is just wonderful."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 2,
+      "title": "Great piece, definitely would buy again",
+      "review": "I would definitely buy this again, the quality is just to die for. One of my favorite pieces."
     },
     {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
-    },
-    {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
-    },
-    {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
-    },
-    {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
-    },
-    {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
-    },
-    {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
-    },
-    {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
-    },
-    {
-      "id": 4,
-      "title": "Cool!",
-      "review": "Unique V-Neck shape, overall one of my favorite pieces in my closet currently."
+      "id": 5,
+      "title": "I AM SO HAPPY!!!",
+      "review": "Fits perfect, the color is fenomenal and the detailing on the number is a really nice touch. Overall so happy with my purchase and wanted to definitely get on here and recommend it. So comfortable."
     }
   ]
 }

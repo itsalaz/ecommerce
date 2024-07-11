@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import ProductCard from "../components/ProductCard"
-import "./ProductsHomepage.css"
+import ProductList from "../components/ProductList"
+import Search from "../components/Search"
+import NavBar from "../components/NavBar"
 
 function ProductsHomepage() {
   const [products, setProducts] = useState([])
@@ -17,31 +19,31 @@ function ProductsHomepage() {
     event.preventDefault()
   }
 
-  function handleSearchChange(query) {
-    setSearch(query)
+  function handleSearchChange(searchQuery) {
+    setSearch(searchQuery)
   }
 
+    const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(search.toLowerCase())
+  )
 
   return (
     <>
+      <NavBar />
       <main className="products-main">
         <h1 className="home-header">Home Page</h1>
         <form className="home-search" onSubmit={handleSubmit}>
-          <input
-            className="search-input"
-            type="text"
-            placeholder="Search products..."
-            value={search}
-            onSearchChange= {handleSearchChange}
-          />
+          <Search search={search} onSearchChange ={handleSearchChange} />
           <button type="submit" className="search-button">Search</button>
         </form>
-        <ul className="products-list">
+        <ul className="product-list">
           {products.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
         </ul>
+        <ProductList products = {filteredProducts} />
       </main>
+      
     </>
   );
 }

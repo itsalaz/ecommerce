@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from "react"
-import {useParams, Link } from "react-router-dom"
+import React, { useEffect, useState } from "react"
+import { useParams, Link } from "react-router-dom"
+import NavBar from "../components/NavBar"
 
   export default function ProductDetails() {
     const {id} = useParams()
-    console.log(id)
     const [product, setProduct] = useState([])
   
     useEffect(() => {
@@ -24,7 +24,8 @@ import {useParams, Link } from "react-router-dom"
 
       return (
         <>
-        <div className="product-details">
+        <NavBar />
+        <div className="product-details-container">
         <div className="product-image">
           <img src={product.image} alt={product.name} />
         </div>
@@ -32,13 +33,12 @@ import {useParams, Link } from "react-router-dom"
           <h1>{product.name}</h1>
           <p>{product.description}</p>
           <p>${product.price}</p>
+          <button>Add To Cart</button>
           {``}
-          <article>
-            <h3>{product.name}</h3>
-            <Link to={`/reviews}`}>Read Reviews</Link>
-          </article>
-        </div>
-      </div>
+          <Link to={`products/${id}/reviews}`}>Read Reviews</Link>
+          </div>
+          </div>
+          {``}
       </>
      )
   }
