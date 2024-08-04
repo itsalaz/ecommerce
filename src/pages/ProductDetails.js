@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
-import NavBar from "../components/NavBar"
 
-  export default function ProductDetails() {
+  export default function ProductDetails({addToBag}) {
     const {id} = useParams()
     const [product, setProduct] = useState([])
-  
+    const [isProductInfoOpen, setIsProductInfoOpen] = useState(false)
+    const [isShippingInfoOpen, setIsShippingInfoOpen] = useState(false)
+   
     useEffect(() => {
       fetch(`http://localhost:3000/products/${id}`)
       .then((response) => response.json())
@@ -14,17 +15,15 @@ import NavBar from "../components/NavBar"
         setProduct(data)
       })
       .catch(error => console.error("Error fetching product:", error))
-    }, [])
+    }, [id])
   
     if(!product) {
       return <h1>Product not found</h1>
     }
 
- 
 
       return (
         <>
-        <NavBar />
         <div className="product-details-container">
         <div className="product-details-image">
           <img src={product.image} alt={product.name} />
@@ -33,9 +32,39 @@ import NavBar from "../components/NavBar"
           <h1>{product.name}</h1>
           <p>{product.description}</p>
           <p>${product.price}</p>
+          <button onClick={() => addToBag(product)}>Add To Bag</button>
+          <br></br>
+
+          <div className= "expandable-section">
+            <div 
+            className= "expandable-header" 
+            onClick= {() => setIsProductInfoOpen(!isProductInfoOpen)}>
+              <span>Details</span>
+              <span>{isProductInfoOpen ? '-': '+'} </span>
+            </div>
+            {isProductInfoOpen && (
+              <div className= "expandable-content">
+                <p>Insert Info</p>
+              </div>
+            )}
+          </div>
+
+          <div className= "expandable-section">
+            <div 
+            className= "expandable-header" 
+            onClick= {() => setIsShippingInfoOpen(!isShippingInfoOpen)}>
+            <span>Shipping</span>
+            <span>{isShippingInfoOpen ? '-': '+'} </span>
+          </div>
+          {isShippingInfoOpen && (
+            <div className= "expandable-content">
+              <p>Insert Shipping Details</p>
+            </div>
+          )}
+          </div>
           <Link to={`/products/${id}/reviews`}>Read Reviews</Link>
           </div>
-          </div>
+        </div>
       </>
      )
   }

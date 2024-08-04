@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import ReviewForm from "../components/ReviewForm"
 import { useParams } from "react-router-dom"
-import NavBar from "../components/NavBar"
 
 export default function ReviewsList() {
   const { id } = useParams()
@@ -21,7 +20,6 @@ export default function ReviewsList() {
 
     return (
       <div className="reviews-container">
-        <NavBar />
         <h1>Review</h1>
         <ReviewForm onAddReview={handleAddReview} id={id} />
         <ul>
