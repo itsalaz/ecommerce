@@ -51,6 +51,7 @@ export default function App() {
           <Route path="/products" element= {<ProductsHomepage search={search}/>}/>
           <Route path="/products/:id" element= {<ProductDetails addToBag={addToBag} />} />
           <Route path="/checkout" element={<Checkout bagItems={bagItems} /> } />
+          <Route path="payment" element={<Checkout />} />
           <Route path="/shipping" element={<Shipping bagItems={bagItems} /> } /> 
         </Routes>
       </main>

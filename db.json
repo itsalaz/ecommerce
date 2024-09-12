@@ -7,7 +7,7 @@
       "description": "The Denim Jacket is made in the USA from vintaged Japanese denim in a relaxed fit shaped by back pleats. The minimalist trucker style features a shirt collar, antique brass front zipper, side pockets, and antique brass buttons for adjustability. A leather Fear of God label is at the back collar.",
       "image": "/P2IMAGES/FOG1JACKETFRONT.png",
       "inventory": 5,
-      "price": 600
+      "price": 275
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "description": "The Denim Jacket is made in the USA from vintaged Japanese denim in a relaxed fit shaped by back pleats. The minimalist trucker style features a shirt collar, antique brass front zipper, side pockets, and antique brass buttons for adjustability. A leather Fear of God label is at the back collar.",
       "image": "/P2IMAGES/FOG2JACKETFRONT.png",
       "inventory": 3,
-      "price": 600
+      "price": 275
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "color": "Light Grey",
       "image": "/P2IMAGES/FOG3SHIRTFRONT.png",
       "inventory": 0,
-      "price": 450
+      "price": 150
     },
     {
       "id": "4",
@@ -34,7 +34,7 @@
       "color": "Cream",
       "image": "/P2IMAGES/FOG4SHIRTFRONT.png",
       "inventory": 7,
-      "price": 450
+      "price": 150
     },
     {
       "id": "5",
@@ -43,7 +43,7 @@
       "color": "Light Grey",
       "image": "/P2IMAGES/FOG5TEEFRONT.png",
       "inventory": 1,
-      "price": 315
+      "price": 200
     },
     {
       "id": "6",
@@ -52,7 +52,7 @@
       "color": "Washed Black",
       "image": "/P2IMAGES/FOG6TEEFRONT.png",
       "inventory": 2,
-      "price": 315
+      "price": 125
     }
   ]
 }
