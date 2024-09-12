@@ -9,7 +9,6 @@ function NavBar() {
         <NavLink to="/"></NavLink>
         <NavLink to="/products"></NavLink>
         <NavLink to="/products/:id"></NavLink>
-        <NavLink to="/products/:id/reviews"></NavLink>
         </nav>
     </div>
 
