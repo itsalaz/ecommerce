@@ -10,18 +10,19 @@ This is a feature-rich eCommerce website built with React JS that includes a dro
 - **Product Details Page**: Detailed view for individual products, including descriptions, pricing, and the ability to add items to the bag.
 - **Checkout System**: Seamless checkout experience allowing users to review items, enter payment details, and confirm orders.
 
-### Screenshots
 
 #### 1. Products Page / Dropdown Bag
 
 ![Products Page](./Users/elizabethdelgado/development/code/phase-2/project2/public/P2IMAGES/HomeDropdown.png)
+<img src="/P2IMAGES/HomeDropdown.png" alt="Home Page" />
+
 
 This page displays the list of all products, complete with images, prices, and links to the product details, and dropdown shopping bag.
 
 #### 2. Product Details Page
 
 ![Product Details Page](./Users/elizabethdelgado/development/code/phase-2/project2/public/P2IMAGES/ProductDetails.png)
-
+<img src = "/P2IMAGES/ProductDetails.png" alt="Product Details Page" />
 This page provides detailed information about a specific product, including an option to add it to the bag.
 
 ## Getting Started
@@ -34,4 +35,7 @@ Run the following command to install the required dependencies:
 
 ```bash
 npm install
+npm start
+cd server
+json-server db.json
 ```
