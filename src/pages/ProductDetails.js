@@ -3,12 +3,13 @@ import { useParams } from "react-router-dom"
 
   export default function ProductDetails({addToBag}) {
     const {id} = useParams()
+    console.log(id)
     const [product, setProduct] = useState([])
     const [isProductInfoOpen, setIsProductInfoOpen] = useState(false)
     const [isShippingInfoOpen, setIsShippingInfoOpen] = useState(false)
    
     useEffect(() => {
-      fetch(`http://localhost:3000/products/${id}`)
+      fetch(`/api/product/${id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data)
