@@ -8,8 +8,7 @@ export default function Checkout({ bagItems}) {
 
 
   return (
-    <div className="checkout-container">
-      <h1>Checkout</h1>
+    <div className="checkout-container-left">
       <div className="checkout">
       { bagItems.map((item, index) => (
         <div key={index} className='checkout-items'>
@@ -21,13 +20,19 @@ export default function Checkout({ bagItems}) {
         </div>
       ))}
       </div>
+      <div className='checkout-container-right'>
       <div className="checkout-total">
-        <h3>Total: ${total}</h3>
+        <h3>Subtotal: ${total}</h3>
+        <h3>Free Shipping</h3>
+        <p>Sales tax calculated at checkout </p>
+        <h2>Total: ${total}</h2>
+        <button>CHECKOUT AS GUEST</button>
+        <button>SIGN IN FOR FASTER CHECKOUT</button>
         <Link to ='/shipping'>
         <button className="checkout-button">Order</button>
         </Link>
-
       </div>
-    </div>
+      </div>
+      </div>
   )
 }

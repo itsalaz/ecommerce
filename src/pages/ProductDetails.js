@@ -34,7 +34,6 @@ import { useParams } from "react-router-dom"
           <p>{product.description}</p>
           <p>${product.price}</p>
           <button onClick={() => addToBag(product)}
-    
           >Add To Bag</button>
           <br></br>
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import ProductCard from "../components/ProductCard"
+import Footer from '../components/Footer'
 
 export default function ProductsHomepage({search}) {
   const [products, setProducts] = useState([])
@@ -24,6 +25,7 @@ export default function ProductsHomepage({search}) {
             <ProductCard key={product.id} product={product} />
           ))}
         </ul>
+        <Footer />
       </main>
       
     </>
