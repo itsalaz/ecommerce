@@ -16,7 +16,7 @@ export default function Header({search, setSearch, bagItems}) {
   }
 
   function handleSearchChange(event) {
-    setSearch(event)
+    setSearch(event.target.value)
   }
 
 
