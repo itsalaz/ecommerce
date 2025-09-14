@@ -37,13 +37,11 @@ export default function App() {
   }
 
 
-  
-
   return (
     <section className="">
       <Header 
-      search = {search} 
-      setSearch= {setSearch} 
+      setSearch = {setSearch}
+      search = {search}
       bagItems={bagItems} />
       <main>
         <Routes>

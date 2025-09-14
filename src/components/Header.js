@@ -13,7 +13,7 @@ export default function Header({search, setSearch, bagItems}) {
   }
 
   function handleSearchChange(event) {
-    setSearch(event)
+    setSearch(event.target.value)
   }
 
   const toggleDropdown = () => {
@@ -41,7 +41,7 @@ export default function Header({search, setSearch, bagItems}) {
       <input 
         type="text"
         placeholder="Type a name to search..."
-        value={search}
+        // value={search}
         onChange={handleSearchChange}
         />
       </form>
