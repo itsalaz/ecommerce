@@ -19,12 +19,6 @@ export default function Header({search, setSearch, bagItems}) {
     setSearch(event.target.value)
   }
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen)
-
-  }
-
-
   const handleCheckout = () => {
     setIsDropdownOpen(false)
     navigate('/checkout')

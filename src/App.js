@@ -4,11 +4,9 @@ import ProductsHomepage from "./pages/ProductsHomepage"
 import ProductDetails from "./pages/ProductDetails"
 import Header from "./components/Header"
 import Checkout from "./pages/Checkout"
-import Shipping from "./pages/Shipping"
 import { saveCartToLocalStorage, loadCartFromLocalStorage } from "./utility"
 import Login from './pages/UserPanel/Login'
 import Signup from './pages/UserPanel/Signup'
-import Favorites from './pages/Favorites'
 
 
 
@@ -39,7 +37,6 @@ export default function App() {
   }
 
 
-  
 
   return (
     <section className="">
@@ -50,14 +47,12 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element= {<ProductsHomepage search={search} addToBag={addToBag} />}/>
-          <Route path="/products" element= {<ProductsHomepage search={search} onSearchChange={handleSearchChange} addToBag={addToBag} />}/>
+          <Route path="/products" element= {<ProductsHomepage search={search} addToBag={addToBag} />}/>
           <Route path="/login" element= {<Login search={search} />} />
           <Route path="/signup" element= {<Signup search={search} />} />
-          <Route path="/favorites" element= {<Favorites search={search}/>} />
           <Route path="/products/:id" element= {<ProductDetails addToBag={addToBag} />} />
           <Route path="/checkout" element={<Checkout bagItems={bagItems} /> } />
           <Route path="payment" element={<Checkout />} />
-          <Route path="/shipping" element={<Shipping bagItems={bagItems} /> } /> 
         </Routes>
       </main>
     </section>
