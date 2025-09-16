@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
 import NavBar from './NavBar'
 
 
 
 export default function Header({search, setSearch, bagItems}) {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const navigate = useNavigate()
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   function handleSubmit(event) {
     event.preventDefault()
@@ -18,12 +21,17 @@ export default function Header({search, setSearch, bagItems}) {
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen)
+
   }
 
 
   const handleCheckout = () => {
     setIsDropdownOpen(false)
     navigate('/checkout')
+  }
+
+  function toggleDropdown() {
+    setIsDropdownOpen(!isDropdownOpen) 
   }
 
 
@@ -45,6 +53,17 @@ export default function Header({search, setSearch, bagItems}) {
         onChange={handleSearchChange}
         />
       </form>
+
+      <button className='user-btn'>
+      <Link to='/login'>
+      <FontAwesomeIcon className='user-icon'icon={faUser} />
+      </Link>
+      </button>
+      <button className='favorites-btn'>
+      <Link to='/favorites'>
+      <FontAwesomeIcon className='star-icon' icon={faStar} /> 
+      </Link>
+      </button>
       <span className= "header-bag" onClick={toggleDropdown}>
         BAG
         {isDropdownOpen && (
